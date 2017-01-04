@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World</title>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="example">
+        <my-component></my-component>
+    </div>
+</body>
+<script>
+    var Child = {
+        template : '<div>Acustom component!</div>'
+    }
+    new Vue({
+        el: '#example',
+        components : {
+            'my-component' : Child
+        }
+    });
+</script>
+</html>
